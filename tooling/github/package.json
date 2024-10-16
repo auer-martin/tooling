@@ -1,5 +1,5 @@
 {
-  "name": "@ausweis/github-actions",
+  "name": "@ausweis/github",
   "description": "Ausweis Github Actions",
   "version": "0.2.33",
   "private": false,
