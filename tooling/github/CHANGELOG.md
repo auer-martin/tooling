@@ -1,5 +1,11 @@
 # @ausweis/github
 
+## 0.2.35
+
+### Patch Changes
+
+- 4d0b3be: refactor: publish with correct name
+
 ## 0.2.34
 
 ### Patch Changes
