@@ -1,5 +1,7 @@
 # @ausweis/prettier
 
+## 0.2.35
+
 ## 0.2.34
 
 ### Patch Changes
