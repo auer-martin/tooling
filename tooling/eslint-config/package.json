@@ -1,6 +1,6 @@
 {
   "name": "@ausweis/eslint-config",
-  "description": "Protokoll Eslint Config",
+  "description": "Ausweis Eslint Config",
   "author": "Martin Auer",
   "private": false,
   "version": "0.2.32",

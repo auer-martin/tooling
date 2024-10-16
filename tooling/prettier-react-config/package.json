@@ -1,6 +1,6 @@
 {
-  "name": "@ausweis/prettier-config",
-  "description": "Protokoll Prettier Config",
+  "name": "@ausweis/prettier-react-config",
+  "description": "Ausweis Prettier React Config",
   "author": "Martin Auer",
   "private": false,
   "version": "0.2.32",
@@ -15,13 +15,14 @@
   },
   "dependencies": {
     "prettier": "catalog:",
-    "prettier-plugin-organize-imports": "^4.0.0",
     "prettier-plugin-tailwindcss": "^0.6.8"
   },
   "devDependencies": {
+    "@ausweis/prettier-config": "workspace:*",
+    "@ausweis/tailwind-config": "workspace:*",
     "@ausweis/tsconfig": "workspace:*",
     "@types/node": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@ausweis/prettier-config"
+  "prettier": "@ausweis/prettier-react-config"
 }

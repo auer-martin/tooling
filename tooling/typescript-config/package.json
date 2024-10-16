@@ -1,6 +1,6 @@
 {
-  "name": "@ausweis/tsconfig",
-  "description": "Protokoll Typescript Config",
+  "name": "@ausweis/typescript-config",
+  "description": "Ausweis Typescript Config",
   "author": "Martin Auer",
   "private": false,
   "version": "0.2.32",

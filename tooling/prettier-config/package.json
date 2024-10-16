@@ -1,0 +1,26 @@
+{
+  "name": "@ausweis/prettier-config",
+  "description": "Ausweis Prettier Config",
+  "author": "Martin Auer",
+  "private": false,
+  "version": "0.2.32",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "prettier": "catalog:",
+    "prettier-plugin-organize-imports": "^4.0.0"
+  },
+  "devDependencies": {
+    "@ausweis/tsconfig": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  },
+  "prettier": "@ausweis/prettier-config"
+}
