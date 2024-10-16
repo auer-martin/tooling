@@ -3,7 +3,7 @@
   "description": "Protokoll Typescript Config",
   "author": "Martin Auer",
   "private": false,
-  "version": "0.2.31",
+  "version": "0.2.32",
   "files": [
     "*.json"
   ]

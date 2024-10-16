@@ -1,5 +1,7 @@
 # @ausweis/eslint-config
 
+## 0.2.32
+
 ## 0.2.31
 
 ### Patch Changes
