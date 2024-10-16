@@ -2,7 +2,7 @@
   "name": "@ausweis/tailwind",
   "description": "Ausweis tailwind config",
   "author": "Martin Auer",
-  "version": "0.2.33",
+  "version": "0.2.34",
   "private": false,
   "type": "module",
   "license": "MIT",
