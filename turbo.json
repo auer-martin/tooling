@@ -1,0 +1,31 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "ui": "stream",
+  "globalDependencies": ["**/.env"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".cache/tsbuildinfo.json", "dist/**"]
+    },
+    "format": {
+      "outputs": [".cache/.prettiercache"],
+      "outputLogs": "new-only"
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "outputs": [".cache/.eslintcache"]
+    },
+    "typecheck": {
+      "dependsOn": ["^build"],
+      "outputs": [".cache/tsbuildinfo.json"]
+    },
+    "release": {
+      "dependsOn": ["build"]
+    },
+    "clean": {
+      "cache": false
+    }
+  },
+  "globalEnv": [],
+  "globalPassThroughEnv": ["NODE_ENV", "CI", "npm_lifecycle_event"]
+}

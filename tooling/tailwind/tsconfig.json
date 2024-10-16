@@ -1,0 +1,5 @@
+{
+  "extends": "@ausweis/tsconfig/base.json",
+  "include": ["base.ts", "native.ts", "web.ts"],
+  "exclude": ["node_modules"]
+}

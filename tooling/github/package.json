@@ -1,0 +1,9 @@
+{
+  "name": "@ausweis/github",
+  "description": "Protokoll Github Actions",
+  "version": "0.2.30",
+  "private": false,
+  "files": [
+    "**/*.yml"
+  ]
+}

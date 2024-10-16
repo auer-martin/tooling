@@ -1,0 +1,27 @@
+name: 'Turbo Check Cache'
+description: 'Check if Turbo command is cached and set output accordingly'
+inputs:
+  command:
+    description: 'Turbo command to run (e.g., "test:e2e")'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Turbo dry-run and check cache
+      id: cache-check
+      shell: bash
+      run: |
+        output=$(pnpm turbo run ${{ inputs.command }} --dry-run)
+        if echo "$output" | tail -n 4 | grep -q ">>> FULL TURBO"; then
+          echo "Cache hit detected for command ${{ inputs.command }}."
+          echo "cache_hit=true" >> $GITHUB_OUTPUT
+        else
+          echo "Cache miss detected for command ${{ inputs.command }}."
+          echo "cache_hit=false" >> $GITHUB_OUTPUT
+        fi
+
+outputs:
+  cache_hit:
+    description: 'Whether the command is entries are cached (true) or not (false)'
+    value: ${{ steps.cache-check.outputs.cache_hit }}
