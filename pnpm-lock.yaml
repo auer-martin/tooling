@@ -35,7 +35,7 @@ importers:
     devDependencies:
       '@ausweis/prettier':
         specifier: workspace:*
-        version: link:tooling/prettier
+        version: link:prettier
       '@changesets/cli':
         specifier: ^2.27.9
         version: 2.27.9
@@ -49,7 +49,7 @@ importers:
         specifier: 'catalog:'
         version: 5.5.4
 
-  tooling/eslint:
+  eslint:
     dependencies:
       '@eslint/compat':
         specifier: ^1.1.1
@@ -98,9 +98,9 @@ importers:
         specifier: 'catalog:'
         version: 5.5.4
 
-  tooling/github: {}
+  github: {}
 
-  tooling/prettier:
+  prettier:
     dependencies:
       prettier:
         specifier: 'catalog:'
@@ -119,7 +119,7 @@ importers:
         specifier: 'catalog:'
         version: 5.5.4
 
-  tooling/prettier-react:
+  prettier-react:
     dependencies:
       prettier:
         specifier: 'catalog:'
@@ -144,7 +144,7 @@ importers:
         specifier: 'catalog:'
         version: 5.5.4
 
-  tooling/tailwind:
+  tailwind:
     dependencies:
       autoprefixer:
         specifier: ^10.4.20
@@ -184,7 +184,7 @@ importers:
         specifier: 'catalog:'
         version: 5.5.4
 
-  tooling/typescript: {}
+  typescript: {}
 
 packages:
 

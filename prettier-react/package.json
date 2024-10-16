@@ -1,6 +1,6 @@
 {
-  "name": "@ausweis/prettier",
-  "description": "Ausweis Prettier Config",
+  "name": "@ausweis/prettier-react",
+  "description": "Ausweis Prettier React Config",
   "author": "Martin Auer",
   "private": false,
   "version": "0.2.34",
@@ -10,17 +10,19 @@
   },
   "scripts": {
     "clean": "git clean -xdf .cache .turbo node_modules",
-    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "format": "prettier --check . --ignore-path ../.gitignore",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "prettier": "catalog:",
-    "prettier-plugin-organize-imports": "^4.0.0"
+    "prettier-plugin-tailwindcss": "^0.6.8"
   },
   "devDependencies": {
+    "@ausweis/prettier": "workspace:*",
+    "@ausweis/tailwind": "workspace:*",
     "@ausweis/typescript": "workspace:*",
     "@types/node": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@ausweis/prettier"
+  "prettier": "@ausweis/prettier-react"
 }

@@ -1,5 +1,10 @@
 packages:
-  - tooling/*
+  - eslint
+  - prettier
+  - typescript
+  - prettier-react
+  - github
+  - tailwind
 
 catalog:
   '@types/node': ^20.14.11
