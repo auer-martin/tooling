@@ -1,4 +1,6 @@
-# @ausweis/eslint-config
+# @ausweis/eslint
+
+## 0.2.33
 
 ## 0.2.32
 

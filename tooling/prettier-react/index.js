@@ -1,12 +1,12 @@
-import prettierConfig from '../prettier-config/index.js';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'url';
+import prettierConfig from '../prettier/index.js';
 
 /** @typedef {import("prettier").Config} PrettierConfig */
 /** @typedef {import("prettier-plugin-tailwindcss").PluginOptions} TailwindConfig */
 
 const tailwindFileUrl = new URL(
-  './node_modules/@ausweis/tailwind-config/web.ts',
+  './node_modules/@ausweis/tailwind/web.ts',
   import.meta.url
 );
 const tailwindFileExists = existsSync(tailwindFileUrl);

@@ -1,8 +1,8 @@
 {
-  "name": "@ausweis/tailwind-config",
+  "name": "@ausweis/tailwind",
   "description": "Ausweis tailwind config",
   "author": "Martin Auer",
-  "version": "0.2.32",
+  "version": "0.2.33",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -23,9 +23,9 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@ausweis/eslint-config": "workspace:*",
-    "@ausweis/prettier-config": "workspace:*",
-    "@ausweis/tsconfig": "workspace:*",
+    "@ausweis/eslint": "workspace:*",
+    "@ausweis/prettier": "workspace:*",
+    "@ausweis/typescript": "workspace:*",
     "@types/react": "catalog:react18",
     "eslint": "catalog:",
     "prettier": "catalog:",
@@ -35,5 +35,5 @@
   "peerDependencies": {
     "react": "catalog:react18"
   },
-  "prettier": "@ausweis/prettier-config"
+  "prettier": "@ausweis/prettier"
 }

@@ -33,7 +33,7 @@ importers:
 
   .:
     devDependencies:
-      '@ausweis/prettier-config':
+      '@ausweis/prettier':
         specifier: workspace:*
         version: link:tooling/prettier
       '@changesets/cli':
@@ -79,10 +79,10 @@ importers:
         specifier: ^8.3.0
         version: 8.3.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)
     devDependencies:
-      '@ausweis/prettier-config':
+      '@ausweis/prettier':
         specifier: workspace:*
         version: link:../prettier
-      '@ausweis/tsconfig':
+      '@ausweis/typescript':
         specifier: workspace:*
         version: link:../typescript
       '@types/node':
@@ -109,7 +109,7 @@ importers:
         specifier: ^4.0.0
         version: 4.1.0(prettier@3.3.3)(typescript@5.5.4)
     devDependencies:
-      '@ausweis/tsconfig':
+      '@ausweis/typescript':
         specifier: workspace:*
         version: link:../typescript
       '@types/node':
@@ -128,13 +128,13 @@ importers:
         specifier: ^0.6.8
         version: 0.6.8(prettier-plugin-organize-imports@4.1.0(prettier@3.3.3)(typescript@5.5.4))(prettier@3.3.3)
     devDependencies:
-      '@ausweis/prettier-config':
+      '@ausweis/prettier':
         specifier: workspace:*
         version: link:../prettier
-      '@ausweis/tailwind-config':
+      '@ausweis/tailwind':
         specifier: workspace:*
         version: link:../tailwind
-      '@ausweis/tsconfig':
+      '@ausweis/typescript':
         specifier: workspace:*
         version: link:../typescript
       '@types/node':
@@ -159,13 +159,13 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.14)
     devDependencies:
-      '@ausweis/eslint-config':
+      '@ausweis/eslint':
         specifier: workspace:*
         version: link:../eslint
-      '@ausweis/prettier-config':
+      '@ausweis/prettier':
         specifier: workspace:*
         version: link:../prettier
-      '@ausweis/tsconfig':
+      '@ausweis/typescript':
         specifier: workspace:*
         version: link:../typescript
       '@types/react':

@@ -1,5 +1,5 @@
 {
-  "extends": "@ausweis/tsconfig/base.json",
+  "extends": "@ausweis/typescript/base.json",
   "include": ["base.ts", "native.ts", "web.ts"],
   "exclude": ["node_modules"]
 }

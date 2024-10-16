@@ -1,9 +1,9 @@
 {
-  "name": "@ausweis/typescript-config",
+  "name": "@ausweis/typescript",
   "description": "Ausweis Typescript Config",
   "author": "Martin Auer",
   "private": false,
-  "version": "0.2.32",
+  "version": "0.2.33",
   "files": [
     "*.json"
   ]
