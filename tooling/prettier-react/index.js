@@ -1,14 +1,11 @@
+import prettierConfig from '@ausweis/prettier';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'url';
-import prettierConfig from '../prettier/index.js';
 
 /** @typedef {import("prettier").Config} PrettierConfig */
 /** @typedef {import("prettier-plugin-tailwindcss").PluginOptions} TailwindConfig */
 
-const tailwindFileUrl = new URL(
-  './node_modules/@ausweis/tailwind/web.ts',
-  import.meta.url
-);
+const tailwindFileUrl = new URL(import.meta.resolve('@ausweis/tailwind/web'));
 const tailwindFileExists = existsSync(tailwindFileUrl);
 
 console.info(`Tailwind config ${tailwindFileExists ? 'found' : 'not found'}.`);
