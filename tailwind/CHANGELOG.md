@@ -1,5 +1,11 @@
 # @ausweis/tailwind
 
+## 0.2.37
+
+### Patch Changes
+
+- dc67176: fix: add basic tailwind-plugins
+
 ## 0.2.36
 
 ## 0.2.35
