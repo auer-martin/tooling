@@ -1,5 +1,11 @@
 # @ausweis/eslint
 
+## 0.2.38
+
+### Patch Changes
+
+- 0d16003: fix: eslint
+
 ## 0.2.37
 
 ## 0.2.36
