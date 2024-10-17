@@ -42,6 +42,8 @@ export default tseslint.config(
   // includeIgnoreFile(path.join(import.meta.dirname, '../.gitignore')),
   {
     ignores: [
+      'app/routeTree.gen.ts',
+      '**/.sanity/*',
       '**/*.config.*',
       '**/node_modules/*',
       '**/dist/*',
