@@ -1,5 +1,11 @@
 # @ausweis/eslint
 
+## 0.2.39
+
+### Patch Changes
+
+- feat(eslint): ignore sanity and tanstack-start routeTree
+
 ## 0.2.38
 
 ### Patch Changes
