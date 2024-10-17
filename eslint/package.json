@@ -6,7 +6,8 @@
   "version": "0.2.35",
   "type": "module",
   "exports": {
-    "./base": "./base.js"
+    "./base": "./base.js",
+    "./react": "./react.js"
   },
   "scripts": {
     "clean": "git clean -xdf .cache .turbo node_modules",
