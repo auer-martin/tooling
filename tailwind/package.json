@@ -2,7 +2,7 @@
   "name": "@ausweis/tailwind",
   "description": "Ausweis tailwind config",
   "author": "Martin Auer",
-  "version": "0.2.39",
+  "version": "0.2.40",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -22,7 +22,6 @@
     "@tailwindcss/typography": "^0.5.15",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
-    "tailwindcss": "catalog:",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
@@ -36,7 +35,8 @@
     "typescript": "catalog:"
   },
   "peerDependencies": {
-    "react": "catalog:react18"
+    "react": "catalog:react18",
+    "tailwindcss": "catalog:"
   },
   "prettier": "@ausweis/prettier"
 }

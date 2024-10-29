@@ -1,5 +1,12 @@
 # @ausweis/eslint
 
+## 0.2.40
+
+### Patch Changes
+
+- 6c4a0b5: feat: update eslint-config
+- minor improvements
+
 ## 0.2.39
 
 ### Patch Changes

@@ -3,7 +3,7 @@
   "description": "Ausweis Prettier Config",
   "author": "Martin Auer",
   "private": false,
-  "version": "0.2.39",
+  "version": "0.2.40",
   "type": "module",
   "exports": {
     ".": "./index.js"

@@ -60,9 +60,6 @@ importers:
       '@tanstack/eslint-plugin-router':
         specifier: ^1.66.1
         version: 1.66.1(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)
-      '@types/eslint__js':
-        specifier: 8.42.3
-        version: 8.42.3
       eslint-plugin-drizzle:
         specifier: ^0.2.3
         version: 0.2.3(eslint@9.9.0(jiti@1.21.6))
@@ -94,6 +91,9 @@ importers:
       '@ausweis/typescript':
         specifier: workspace:*
         version: link:../typescript
+      '@types/eslint__js':
+        specifier: 8.42.3
+        version: 8.42.3
       '@types/node':
         specifier: 'catalog:'
         version: 20.16.0

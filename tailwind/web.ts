@@ -1,3 +1,6 @@
+import containerQueries from '@tailwindcss/container-queries';
+import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
 import type { Config } from 'tailwindcss';
 import animate from 'tailwindcss-animate';
 import { fontFamily } from 'tailwindcss/defaultTheme.js';
@@ -48,5 +51,5 @@ export default {
       'accordion-up': 'accordion-up 0.2s ease-out',
     },
   },
-  plugins: [animate],
+  plugins: [animate, containerQueries, typography, forms],
 } satisfies Config;
