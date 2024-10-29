@@ -13,7 +13,7 @@
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true,
-    "outDir": "${configDir}/dist/esm",
+    "outDir": "${configDir}/dist",
 
     /** Keep TSC performant in monorepos */
     "incremental": true,
