@@ -14,13 +14,15 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "prettier": "catalog:",
     "prettier-plugin-organize-imports": "^4.0.0"
   },
   "devDependencies": {
     "@ausweis/typescript": "workspace:*",
     "@types/node": "catalog:",
     "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "prettier": "catalog:"
   },
   "prettier": "@ausweis/prettier"
 }

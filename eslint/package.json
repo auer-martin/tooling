@@ -31,7 +31,9 @@
     "@ausweis/prettier": "workspace:*",
     "@ausweis/typescript": "workspace:*",
     "@types/eslint__js": "8.42.3",
-    "@types/node": "catalog:",
+    "@types/node": "catalog:"
+  },
+  "peerDependencies": {
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"

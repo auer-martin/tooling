@@ -14,7 +14,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "^0.6.8"
   },
   "devDependencies": {
@@ -23,6 +22,9 @@
     "@ausweis/typescript": "workspace:*",
     "@types/node": "catalog:",
     "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "prettier": "catalog:"
   },
   "prettier": "@ausweis/prettier-react"
 }

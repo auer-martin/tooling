@@ -27,16 +27,15 @@
   "devDependencies": {
     "@ausweis/eslint": "workspace:*",
     "@ausweis/prettier": "workspace:*",
-    "@ausweis/typescript": "workspace:*",
+    "@ausweis/typescript": "workspace:*"
+  },
+  "peerDependencies": {
     "@types/react": "catalog:react18",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "react": "catalog:react18",
+    "tailwindcss": "catalog:",
     "typescript": "catalog:"
-  },
-  "peerDependencies": {
-    "react": "catalog:react18",
-    "tailwindcss": "catalog:"
   },
   "prettier": "@ausweis/prettier"
 }
