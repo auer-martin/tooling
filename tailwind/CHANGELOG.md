@@ -1,5 +1,11 @@
 # @ausweis/tailwind
 
+## 0.2.42
+
+### Patch Changes
+
+- 97a0a51: fix: tailwind web config
+
 ## 0.2.41
 
 ### Patch Changes

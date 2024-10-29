@@ -1,5 +1,11 @@
 # @ausweis/typescript
 
+## 0.2.42
+
+### Patch Changes
+
+- b7ae263: fix: tsconfig
+
 ## 0.2.41
 
 ### Patch Changes
