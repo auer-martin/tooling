@@ -1,5 +1,11 @@
 # @ausweis/eslint
 
+## 0.2.41
+
+### Patch Changes
+
+- 16bf5ce: fix: minor improvements
+
 ## 0.2.40
 
 ### Patch Changes
