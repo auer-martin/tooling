@@ -1,5 +1,11 @@
 # @ausweis/tailwind
 
+## 0.2.43
+
+### Patch Changes
+
+- 77c843a: feat: sidebar colors
+
 ## 0.2.42
 
 ### Patch Changes
