@@ -18,9 +18,7 @@ export default [
       ...pluginHooks.configs.recommended.rules,
     },
     languageOptions: {
-      globals: {
-        React: 'writable',
-      },
+      globals: { React: 'writable' },
     },
   },
 ];

@@ -14,7 +14,7 @@ console.info(`Tailwind config ${tailwindFileExists ? 'found' : 'not found'}.`);
 const config = {
   ...prettierConfig,
   plugins: [...(prettierConfig.plugins ?? []), 'prettier-plugin-tailwindcss'],
-  tailwindConfig: false ? fileURLToPath('') : undefined,
+  ...(tailwindFileExists && { tailwindConfig: fileURLToPath(tailwindFileUrl) }),
   tailwindPreserveWhitespace: true,
   tailwindFunctions: ['cn', 'cva', 'clsx'],
 };

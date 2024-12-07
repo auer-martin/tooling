@@ -33,7 +33,7 @@ export const restrictEnvAccess = tseslint.config(
         },
       ],
     },
-  }
+  },
 );
 
 export default tseslint.config(
@@ -46,10 +46,14 @@ export default tseslint.config(
       '**/.sanity/*',
       '**/*.config.*',
       '**/node_modules/*',
-      '**/dist/*',
       '**/cache/*',
       '**/turbo/*',
       '**/vercel/*',
+      '**/dist/*',
+      '**/.next/*',
+      '**/.eslintrc.cjs',
+      '**/.eslint.config.js',
+      'pnpm-lock.yaml',
     ],
   },
   {
@@ -113,5 +117,5 @@ export default tseslint.config(
   {
     linterOptions: { reportUnusedDisableDirectives: true },
     languageOptions: { parserOptions: { project: true } },
-  }
+  },
 );
