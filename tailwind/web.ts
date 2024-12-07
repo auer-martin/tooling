@@ -53,5 +53,10 @@ export default {
       },
     },
   },
-  plugins: [animate, containerQueries, typography, forms],
+  plugins: [
+    animate,
+    containerQueries as Exclude<Config['plugins'], undefined>[number],
+    typography,
+    forms,
+  ],
 } satisfies Config;
