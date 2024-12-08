@@ -1,9 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
-  "changelog": [
-    "@changesets/changelog-github",
-    { "repo": "avouchit/openid4vc" }
-  ],
+  "changelog": false,
   "commit": true,
   "access": "public",
   "baseBranch": "main",
