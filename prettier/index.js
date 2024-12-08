@@ -2,12 +2,15 @@
 
 /** @type { PrettierConfig  } */
 const config = {
-  printWidth: 80,
   plugins: ['prettier-plugin-organize-imports'],
-  singleQuote: true,
-  trailingComma: 'all',
+  trailingComma: 'es5',
   tabWidth: 2,
-  arrowParens: 'always',
+  singleQuote: true,
+  useTabs: false,
+  jsxSingleQuote: false,
+  arrowParens: 'avoid',
+  bracketSpacing: true,
+  bracketSameLine: false,
   semi: true,
   proseWrap: 'always', // printWidth line breaks in md/mdx
 };
