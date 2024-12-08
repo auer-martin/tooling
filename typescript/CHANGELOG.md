@@ -1,5 +1,11 @@
 # @ausweis/typescript
 
+## 0.2.45
+
+### Patch Changes
+
+- ff620c4: fix: tsconfig
+
 ## 0.2.44
 
 ### Patch Changes
