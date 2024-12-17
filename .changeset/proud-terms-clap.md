@@ -5,6 +5,7 @@
 '@ausweis/prettier-react': patch
 '@ausweis/tailwind': patch
 '@ausweis/typescript': patch
+'@ausweis/vite': patch
 ---
 
-fix: things
+fix: improve tooling
