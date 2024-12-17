@@ -1,5 +1,7 @@
 # @ausweis/prettier-react
 
+## 0.2.48
+
 ## 0.2.47
 
 ### Patch Changes
