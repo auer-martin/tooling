@@ -1,10 +1,10 @@
 import containerQueries from '@tailwindcss/container-queries';
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
-import type { Config } from 'tailwindcss';
 import animate from 'tailwindcss-animate';
 import { fontFamily } from 'tailwindcss/defaultTheme.js';
 
+import type { Config } from 'tailwindcss';
 import base from './base.js';
 
 export default {

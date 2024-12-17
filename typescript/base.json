@@ -4,6 +4,7 @@
   "compilerOptions": {
     /** Base Options */
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "target": "ES2022",
     "lib": ["ES2022"],
@@ -25,11 +26,16 @@
     "strict": true,
     "checkJs": true,
     "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noImplicitOverride": true,
     "strictNullChecks": true,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
+    "noImplicitReturns": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
 
     /** Transpile using Typescript */
     "module": "NodeNext",

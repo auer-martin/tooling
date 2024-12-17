@@ -1,16 +1,39 @@
 /// <reference types="./types.d.ts" />
+import { includeIgnoreFile } from '@eslint/compat';
 import eslint from '@eslint/js';
+import stylisticJs from '@stylistic/eslint-plugin-js';
 import drizzlePlugin from 'eslint-plugin-drizzle';
 import importPlugin from 'eslint-plugin-import';
+import pluginNode from 'eslint-plugin-n';
 import turboPlugin from 'eslint-plugin-turbo';
 import unicornPlugin from 'eslint-plugin-unicorn';
+import globals from 'globals';
+import fs from 'node:fs';
+import path from 'node:path';
 import tseslint from 'typescript-eslint';
+
+const GLOB_INCLUDE = ['**/*.{js,svelte,ts,tsx,vue}'];
+const GLOB_EXCLUDE = ['app/routeTree.gen.ts', '**/*.config.*'];
+
+const findFirstGitignore = () => {
+  const options = [
+    path.join(import.meta.dirname, '.gitignore'),
+    path.join(import.meta.dirname, '../.gitignore'),
+    path.join(import.meta.dirname, '../../.gitignore'),
+    path.join(import.meta.dirname, '../../../.gitignore'),
+  ];
+
+  return options.find(option => fs.existsSync(option));
+};
+
+const gitIgnore = findFirstGitignore();
 
 /**
  * All packages that leverage t3-env should use this rule
  */
 export const restrictEnvAccess = tseslint.config(
   { ignores: ['**/env.ts'] },
+  gitIgnore ? includeIgnoreFile(gitIgnore) : {},
   {
     files: ['**/*.js', '**/*.ts', '**/*.tsx'],
     rules: {
@@ -41,28 +64,21 @@ export default tseslint.config(
   // THIS IS NOT WORKING FOR CONSUMERS
   // includeIgnoreFile(path.join(import.meta.dirname, '../.gitignore')),
   {
-    ignores: [
-      'app/routeTree.gen.ts',
-      '**/.sanity/*',
-      '**/*.config.*',
-      '**/node_modules/*',
-      '**/cache/*',
-      '**/turbo/*',
-      '**/vercel/*',
-      '**/dist/*',
-      '**/.next/*',
-      '**/.eslintrc.cjs',
-      '**/.eslint.config.js',
-      'pnpm-lock.yaml',
-    ],
+    name: '@ausweis/ignores',
+    ignores: GLOB_EXCLUDE,
   },
   {
-    files: ['**/*.js', '**/*.ts', '**/*.tsx'],
+    name: '@ausweis/setup',
+    files: [GLOB_INCLUDE],
     plugins: {
       import: importPlugin,
       unicorn: unicornPlugin,
       turbo: turboPlugin,
       drizzle: drizzlePlugin,
+      // @ts-expect-error
+      '@stylistic/js': stylisticJs,
+      '@typescript-eslint': tseslint.plugin,
+      node: pluginNode,
     },
     extends: [
       eslint.configs.recommended,
@@ -82,40 +98,33 @@ export default tseslint.config(
         'error',
         { drizzleObjectName: 'db' },
       ],
-
       '@typescript-eslint/no-unused-vars': [
         'error',
-        {
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          args: 'after-used',
-          caughtErrors: 'none',
-          ignoreRestSiblings: true,
-          vars: 'all',
-        },
-      ],
-      '@typescript-eslint/consistent-type-imports': [
-        'warn',
-        { prefer: 'type-imports', fixStyle: 'separate-type-imports' },
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
       ],
       '@typescript-eslint/no-misused-promises': [
         2,
         { checksVoidReturn: { attributes: false } },
       ],
-      '@typescript-eslint/no-unnecessary-condition': [
-        'error',
-        {
-          allowConstantLoopConditions: true,
-        },
-      ],
       '@typescript-eslint/no-non-null-assertion': 'error',
       'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
-      'prefer-const': 'error',
       'unicorn/filename-case': ['error', { case: 'kebabCase' }],
     },
   },
   {
     linterOptions: { reportUnusedDisableDirectives: true },
-    languageOptions: { parserOptions: { project: true } },
+    languageOptions: {
+      sourceType: 'module',
+      ecmaVersion: 2020,
+      parser: tseslint.parser,
+      parserOptions: {
+        project: true,
+        extraFileExtensions: ['.svelte', '.vue'],
+        parser: tseslint.parser,
+      },
+      globals: {
+        ...globals.browser,
+      },
+    },
   }
 );

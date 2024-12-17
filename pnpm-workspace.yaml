@@ -5,6 +5,7 @@ packages:
   - prettier-react
   - github
   - tailwind
+  - vite
 
 catalog:
   '@types/node': ^20.14.11
