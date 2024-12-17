@@ -29,7 +29,7 @@ function ensureImportFileExtension({ content, extension }) {
  * @param {import('./index.js').Options} options
  * @returns {import('vite').UserConfig}
  */
-export const tanstackViteConfig = options => {
+export const ausweisViteConfig = options => {
   const outDir = options.outDir ?? 'dist';
   const cjs = options.cjs ?? true;
 
