@@ -3,7 +3,7 @@
   "description": "Ausweis Prettier React Config",
   "author": "Martin Auer",
   "private": false,
-  "version": "0.2.48",
+  "version": "0.2.49",
   "type": "module",
   "exports": {
     ".": "./index.js"
