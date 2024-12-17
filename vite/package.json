@@ -8,6 +8,10 @@
     "index.js",
     "index.d.ts"
   ],
+  "types": "index.d.ts",
+  "main": "index.js",
+  "module": "index.js",
+  "type": "module",
   "exports": {
     ".": {
       "import": {
