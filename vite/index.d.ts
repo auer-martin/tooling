@@ -18,4 +18,4 @@ export type Options = {
 };
 
 /** https://tanstack.com/config/latest/docs/vite */
-export function tanstackViteConfig(config: Options): UserConfig;
+export function ausweisViteConfig(config: Options): UserConfig;
