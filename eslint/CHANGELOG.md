@@ -1,5 +1,11 @@
 # @ausweis/eslint
 
+## 0.2.47
+
+### Patch Changes
+
+- fix: improve tooling
+
 ## 0.2.46
 
 ### Patch Changes
