@@ -1,5 +1,11 @@
 # @ausweis/github
 
+## 0.2.49
+
+### Patch Changes
+
+- b172fa5: fix: some nits
+
 ## 0.2.48
 
 ## 0.2.47
