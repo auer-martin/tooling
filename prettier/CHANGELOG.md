@@ -1,5 +1,11 @@
 # @ausweis/prettier
 
+## 0.2.52
+
+### Patch Changes
+
+- f93e4c1: fix: some nits
+
 ## 0.2.51
 
 ## 0.2.50
