@@ -6,6 +6,5 @@
     "module": "ES2022",
     "verbatimModuleSyntax": false
   },
-  "include": ["*.ts"],
   "exclude": ["node_modules"]
 }
