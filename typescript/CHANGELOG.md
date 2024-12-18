@@ -1,5 +1,11 @@
 # @ausweis/typescript
 
+## 0.2.51
+
+### Patch Changes
+
+- 325c40c: fix: extends
+
 ## 0.2.50
 
 ### Patch Changes
