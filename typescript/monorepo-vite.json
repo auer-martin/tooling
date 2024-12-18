@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": ["./monorepo-package.json", "./vite.json"],
+  "extends": ["./monorepo.json", "./vite.json"],
   "compilerOptions": {
     /* AND if you're building for a library: */
     "declaration": true,
