@@ -3,7 +3,7 @@
   "description": "Ausweis Typescript Config",
   "author": "Martin Auer",
   "private": false,
-  "version": "0.2.49",
+  "version": "0.2.50",
   "files": [
     "*.json"
   ]

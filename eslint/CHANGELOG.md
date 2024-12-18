@@ -1,5 +1,11 @@
 # @ausweis/eslint
 
+## 0.2.50
+
+### Patch Changes
+
+- e4f6952: fix: simplify tsconfig
+
 ## 0.2.49
 
 ### Patch Changes
