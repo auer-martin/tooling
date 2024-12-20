@@ -5,6 +5,5 @@
     "moduleResolution": "Bundler",
     "module": "ES2022",
     "verbatimModuleSyntax": false
-  },
-  "exclude": ["node_modules"]
+  }
 }
