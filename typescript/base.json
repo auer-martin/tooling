@@ -16,6 +16,7 @@
     "verbatimModuleSyntax": true,
     "outDir": "${configDir}/dist",
     "noErrorTruncation": true,
+    "allowImportingTsExtensions": true,
 
     /** Keep TSC performant in monorepos */
     "incremental": true,
