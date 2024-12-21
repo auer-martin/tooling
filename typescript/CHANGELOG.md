@@ -1,5 +1,12 @@
 # @ausweis/typescript
 
+## 0.2.53
+
+### Patch Changes
+
+- f552f2d: fix: improve config
+- a990cc2: fix: tsconfig
+
 ## 0.2.52
 
 ### Patch Changes
