@@ -3,7 +3,7 @@
   "description": "Ausweis Vite Config",
   "author": "Martin Auer",
   "private": false,
-  "version": "0.2.52",
+  "version": "0.2.53",
   "files": [
     "index.js",
     "index.d.ts"
